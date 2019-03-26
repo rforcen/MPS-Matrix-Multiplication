@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B3F42A21E5B18F8003A9167 /* MatrixVersusFullyConnected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F42A11E5B18F8003A9167 /* MatrixVersusFullyConnected.swift */; };
-		7B3F42A41E5B225D003A9167 /* MPSImage+Floats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F42A31E5B225D003A9167 /* MPSImage+Floats.swift */; };
-		7B3F42A61E5B231F003A9167 /* Float16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F42A51E5B231F003A9167 /* Float16.swift */; };
+		4E485B82224A1F19003E7C3B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E485B81224A1F19003E7C3B /* main.swift */; };
+		4E485B8B224A21FD003E7C3B /* MPSImage+Floats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F42A31E5B225D003A9167 /* MPSImage+Floats.swift */; };
+		4E485B8C224A21FD003E7C3B /* Float16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F42A51E5B231F003A9167 /* Float16.swift */; };
+		4E485B8D224A21FD003E7C3B /* MetalVersusBLAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0DAEC1E5B061100BD141D /* MetalVersusBLAS.swift */; };
+		4E485B8E224A21FD003E7C3B /* MatrixVersusFullyConnected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F42A11E5B18F8003A9167 /* MatrixVersusFullyConnected.swift */; };
 		7BB0DADB1E59EF8E00BD141D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0DADA1E59EF8E00BD141D /* AppDelegate.swift */; };
 		7BB0DADD1E59EF8E00BD141D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0DADC1E59EF8E00BD141D /* ViewController.swift */; };
 		7BB0DAE01E59EF8E00BD141D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0DADE1E59EF8E00BD141D /* Main.storyboard */; };
 		7BB0DAE21E59EF8E00BD141D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0DAE11E59EF8E00BD141D /* Assets.xcassets */; };
 		7BB0DAE51E59EF8E00BD141D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0DAE31E59EF8E00BD141D /* LaunchScreen.storyboard */; };
-		7BB0DAED1E5B061100BD141D /* MetalVersusBLAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0DAEC1E5B061100BD141D /* MetalVersusBLAS.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4E485B7D224A1F19003E7C3B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4E485B7F224A1F19003E7C3B /* MatrixMultMacOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MatrixMultMacOS; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E485B81224A1F19003E7C3B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7B3F42A11E5B18F8003A9167 /* MatrixVersusFullyConnected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixVersusFullyConnected.swift; sourceTree = "<group>"; };
 		7B3F42A31E5B225D003A9167 /* MPSImage+Floats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPSImage+Floats.swift"; sourceTree = "<group>"; };
 		7B3F42A51E5B231F003A9167 /* Float16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float16.swift; sourceTree = "<group>"; };
@@ -33,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E485B7C224A1F19003E7C3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BB0DAD41E59EF8E00BD141D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E485B80224A1F19003E7C3B /* MatrixMultMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				7B3F42A31E5B225D003A9167 /* MPSImage+Floats.swift */,
+				7B3F42A51E5B231F003A9167 /* Float16.swift */,
+				7BB0DAEC1E5B061100BD141D /* MetalVersusBLAS.swift */,
+				7B3F42A11E5B18F8003A9167 /* MatrixVersusFullyConnected.swift */,
+				4E485B81224A1F19003E7C3B /* main.swift */,
+			);
+			path = MatrixMultMacOS;
+			sourceTree = "<group>";
+		};
 		7BB0DACE1E59EF8E00BD141D = {
 			isa = PBXGroup;
 			children = (
 				7BB0DAD91E59EF8E00BD141D /* MatrixMult */,
+				4E485B80224A1F19003E7C3B /* MatrixMultMacOS */,
 				7BB0DAD81E59EF8E00BD141D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				7BB0DAD71E59EF8E00BD141D /* MatrixMult.app */,
+				4E485B7F224A1F19003E7C3B /* MatrixMultMacOS */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,10 +100,6 @@
 			children = (
 				7BB0DADA1E59EF8E00BD141D /* AppDelegate.swift */,
 				7BB0DADC1E59EF8E00BD141D /* ViewController.swift */,
-				7BB0DAEC1E5B061100BD141D /* MetalVersusBLAS.swift */,
-				7B3F42A11E5B18F8003A9167 /* MatrixVersusFullyConnected.swift */,
-				7B3F42A31E5B225D003A9167 /* MPSImage+Floats.swift */,
-				7B3F42A51E5B231F003A9167 /* Float16.swift */,
 				7BB0DADE1E59EF8E00BD141D /* Main.storyboard */,
 				7BB0DAE11E59EF8E00BD141D /* Assets.xcassets */,
 				7BB0DAE31E59EF8E00BD141D /* LaunchScreen.storyboard */,
@@ -79,6 +111,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4E485B7E224A1F19003E7C3B /* MatrixMultMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E485B83224A1F19003E7C3B /* Build configuration list for PBXNativeTarget "MatrixMultMacOS" */;
+			buildPhases = (
+				4E485B7B224A1F19003E7C3B /* Sources */,
+				4E485B7C224A1F19003E7C3B /* Frameworks */,
+				4E485B7D224A1F19003E7C3B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MatrixMultMacOS;
+			productName = MatrixMultMacOS;
+			productReference = 4E485B7F224A1F19003E7C3B /* MatrixMultMacOS */;
+			productType = "com.apple.product-type.tool";
+		};
 		7BB0DAD61E59EF8E00BD141D /* MatrixMult */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BB0DAE91E59EF8E00BD141D /* Build configuration list for PBXNativeTarget "MatrixMult" */;
@@ -102,13 +151,18 @@
 		7BB0DACF1E59EF8E00BD141D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Hollance;
 				TargetAttributes = {
+					4E485B7E224A1F19003E7C3B = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = ALFNML2A4Q;
+						ProvisioningStyle = Automatic;
+					};
 					7BB0DAD61E59EF8E00BD141D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MGCEKGP4Y4;
+						DevelopmentTeam = ALFNML2A4Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				7BB0DAD61E59EF8E00BD141D /* MatrixMult */,
+				4E485B7E224A1F19003E7C3B /* MatrixMultMacOS */,
 			);
 		};
 /* End PBXProject section */
@@ -145,15 +200,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E485B7B224A1F19003E7C3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E485B8B224A21FD003E7C3B /* MPSImage+Floats.swift in Sources */,
+				4E485B8C224A21FD003E7C3B /* Float16.swift in Sources */,
+				4E485B8D224A21FD003E7C3B /* MetalVersusBLAS.swift in Sources */,
+				4E485B8E224A21FD003E7C3B /* MatrixVersusFullyConnected.swift in Sources */,
+				4E485B82224A1F19003E7C3B /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BB0DAD31E59EF8E00BD141D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7BB0DADD1E59EF8E00BD141D /* ViewController.swift in Sources */,
-				7B3F42A61E5B231F003A9167 /* Float16.swift in Sources */,
-				7BB0DAED1E5B061100BD141D /* MetalVersusBLAS.swift in Sources */,
-				7B3F42A21E5B18F8003A9167 /* MatrixVersusFullyConnected.swift in Sources */,
-				7B3F42A41E5B225D003A9167 /* MPSImage+Floats.swift in Sources */,
 				7BB0DADB1E59EF8E00BD141D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +243,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4E485B84224A1F19003E7C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ALFNML2A4Q;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4E485B85224A1F19003E7C3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ALFNML2A4Q;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		7BB0DAE71E59EF8E00BD141D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -277,11 +395,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MGCEKGP4Y4;
+				DEVELOPMENT_TEAM = ALFNML2A4Q;
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = MatrixMult/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hollance.MatrixMult;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicesync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
@@ -292,10 +410,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MGCEKGP4Y4;
+				DEVELOPMENT_TEAM = ALFNML2A4Q;
 				INFOPLIST_FILE = MatrixMult/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hollance.MatrixMult;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicesync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,6 +422,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E485B83224A1F19003E7C3B /* Build configuration list for PBXNativeTarget "MatrixMultMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E485B84224A1F19003E7C3B /* Debug */,
+				4E485B85224A1F19003E7C3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7BB0DAD21E59EF8E00BD141D /* Build configuration list for PBXProject "MatrixMult" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
